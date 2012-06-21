@@ -6765,6 +6765,19 @@ ul.lista-servicios li:before {
   content: "\f00c";
   margin-right: 0.5em;
 }
+.cabecera {
+  position: relative;
+}
+.social-buttons {
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+.social-buttons li {
+  display: inline;
+}
 @media (max-width: 767px) {
   #slogan h2 a {
     font-size: 2em;

@@ -26,6 +26,104 @@ function checkValues($value)
 	
 }	
 
+
+   function pagination($query, $termt, $filter, $per_page = 10,$page = 1 ){        
+    	$total = mysql_num_rows(mysql_query($query));
+        $adjacents = "2"; 
+
+    	$page = ($page == 0 ? 1 : $page);  
+    	$start = ($page - 1) * $per_page;								
+		
+    	$prev = $page - 1;							
+    	$next = $page + 1;
+        $lastpage = ceil($total/$per_page);
+    	$lpm1 = $lastpage - 1;
+    	
+    	$pagination = "";
+    	if($lastpage > 1)
+    	{	
+    		$pagination .= "<ul class='pagination-list'>";
+                    //$pagination .= "<li class='details'>Page $page of $lastpage</li>";
+            
+            if ($page != 1){ 
+            	$pagination.= "<li><a href='#' data-page='1' data-filter='$filter' data-term='$termt'><i class='icon-arrow-left'></i></a></li>";
+                $pagination.= "<li><a href='#' data-page='$prev' data-filter='$filter' data-term='$termt'><i class='icon-chevron-left'></i></a></li>";
+            }else{
+            	$pagination.= "<li class='active'><a href='#' data-page='1' data-filter='$filter' data-term='$termt'><i class='icon-arrow-left'></i></a></li>";
+                $pagination.= "<li class='active'><a href='#' data-page='$prev' data-filter='$filter' data-term='$termt'><i class='icon-chevron-left'></i></a></li>";
+            }        
+                    
+    		if ($lastpage < 7 + ($adjacents * 2))
+    		{	
+    			for ($counter = 1; $counter <= $lastpage; $counter++)
+    			{
+    				if ($counter == $page)
+    					$pagination.= "<li><a class='current' href='#' data-page='$counter' data-filter='$filter' data-term='$termt'>$counter</a></li>";
+    				else
+    					$pagination.= "<li><a href='#' data-page='$counter' data-filter='$filter' data-term='$termt'>$counter</a></li>";					
+    			}
+    		}
+    		elseif($lastpage > 5 + ($adjacents * 2))
+    		{
+    			if($page < 1 + ($adjacents * 2))		
+    			{
+    				for ($counter = 1; $counter < 4 + ($adjacents * 2); $counter++)
+    				{
+    					if ($counter == $page)
+    						$pagination.= "<li class='active'><a href='#' data-page='$counter' data-filter='$filter' data-term='$termt'>$counter</a></li>";
+    					else
+    						$pagination.= "<li><a href='#' data-page='$counter' data-filter='$filter' data-term='$termt'>$counter</a></li>";					
+    				}
+    				$pagination.= "<li class='dot disabled'><a href='#'>&hellip;</a></li>";
+    				$pagination.= "<li><a href='#' data-page='$lpm1' data-filter='$filter' data-term='$termt'>$lpm1</a></li>";
+    				$pagination.= "<li><a href='#' data-page='$lastpage' data-filter='$filter' data-term='$termt'>$lastpage</a></li>";		
+    			}
+    			elseif($lastpage - ($adjacents * 2) > $page && $page > ($adjacents * 2))
+    			{
+    				$pagination.= "<li><a href='#' data-page='1' data-filter='$filter' data-term='$termt'>1</a></li>";
+    				$pagination.= "<li><a href='#' data-page='2' data-filter='$filter' data-term='$termt'>2</a></li>";
+    				$pagination.= "<li class='dot disabled'><a href='#'>&hellip;</a></li>";
+    				for ($counter = $page - $adjacents; $counter <= $page + $adjacents; $counter++)
+    				{
+    					if ($counter == $page)
+    						$pagination.= "<li class='active'><a href='#' data-page='$counter' data-filter='$filter' data-term='$termt'>$counter</a></li>";
+    					else
+    						$pagination.= "<li><a href='#' data-page='$counter' data-filter='$filter' data-term='$termt'>$counter</a></li>";					
+    				}
+    				$pagination.= "<li class='dot disabled'><a href='#'>&hellip;</a></li>";
+    				$pagination.= "<li><a href='#' data-page='$lpm1' data-filter='$filter' data-term='$termt'>$lpm1</a></li>";
+    				$pagination.= "<li><a href='#' data-page='$lastpage' data-filter='$filter' data-term='$termt'>$lastpage</a></li>";		
+    			}
+    			else
+    			{
+    				$pagination.= "<li><a href='#' data-page='1' data-filter='$filter' data-term='$termt'>1</a></li>";
+    				$pagination.= "<li><a href='#' data-page='2' data-filter='$filter' data-term='$termt'>2</a></li>";
+    				$pagination.= "<li class='dot disabled'><a href='#'>&hellip;</a></li>";
+    				for ($counter = $lastpage - (2 + ($adjacents * 2)); $counter <= $lastpage; $counter++)
+    				{
+    					if ($counter == $page)
+    						$pagination.= "<li class='active'><a href='#' data-page='$counter' data-filter='$filter' data-term='$termt'>$counter</a></li>";
+    					else
+    						$pagination.= "<li><a href='#' data-page='$counter' data-filter='$filter' data-term='$termt'>$counter</a></li>";					
+    				}
+    			}
+    		}
+    		
+    		if ($page < $counter - 1){ 
+    			$pagination.= "<li><a href='#' data-page='$next' data-filter='$filter' data-term='$termt'><i class='icon-chevron-right'></i></a></li>";
+                $pagination.= "<li><a href='#' data-page='$lastpage' data-filter='$filter' data-term='$termt'><i class='icon-arrow-right'></i></a></li>";
+    		}else{
+    			$pagination.= "<li class='active'><a href='#' data-page='$counter' data-filter='$filter' data-term='$termt'><i class='icon-chevron-right'></i></a></li>";
+                $pagination.= "<li class='active'><a href='#' data-page='$counter' data-filter='$filter' data-term='$termt'><i class='icon-arrow-right'></i></a></li>";
+            }
+    		$pagination.= "</ul>\n";		
+    	}
+    
+    
+        return $pagination;
+    } 
+    
+    
 $aterm = $termt = checkValues($_REQUEST['term']);
 
 
@@ -41,7 +139,7 @@ $filter = $_REQUEST['filter'];
 
 //echo "filter: $filter \n";
 
-$per_page = 50;
+$per_page = 10;
 
 
 $arraySearch = explode(" ", $termt);
@@ -97,7 +195,7 @@ $rsd = mysql_query($sql);
 ?>
 
 <div class="pagination pagination-centered">
-	<ul id="pagination-list">
+<!--	<ul id="pagination-list">
 		<li<?php if ($page == 1): ?> class="disabled" <?php endif; ?>><a href="#" data-page="1" data-filter="<?php echo $filter; ?>" data-term="<?php echo $termt; ?>"><i class="icon-arrow-left"></i></a></li>
 		<li<?php if ($page == 1): ?> class="disabled" <?php endif; ?>><a href="#" data-page="<?php echo max(1, $page-1); ?>" data-filter="<?php echo $filter; ?>" data-term="<?php echo $termt; ?>"><i class="icon-chevron-left"></i></a></li>
 		<?php
@@ -111,7 +209,9 @@ $rsd = mysql_query($sql);
 		?>
 		<li<?php if ($page == $pages): ?> class="disabled" <?php endif; ?>><a href="#" data-page="<?php echo min($pages, $page+1); ?>" data-filter="<?php echo $filter; ?>" data-term="<?php echo $termt; ?>"><i class="icon-chevron-right"></i></a></li>
 		<li<?php if ($page == $pages): ?> class="disabled" <?php endif; ?>><a href="#" data-page="<?php echo $pages; ?>" data-filter="<?php echo $filter; ?>" data-term="<?php echo $termt; ?>"><i class="icon-arrow-right"></i></a></li>
-	</ul>
+	</ul>-->
+	
+	<?php print pagination($sqlc, $termt, $filter, $per_page, $page); ?>
 </div>
 
 <table class="table table-bordered table-striped" id="tabla-resultados">
@@ -143,7 +243,7 @@ $rsd = mysql_query($sql);
 </table>
 
 <div class="pagination pagination-centered">
-<ul id="pagination-list">
+<!--<ul id="pagination-list">
 	<li<?php if ($page == 1): ?> class="disabled" <?php endif; ?>><a href="#" data-page="1" data-filter="<?php echo $filter; ?>" data-term="<?php echo $termt; ?>"><i class="icon-arrow-left"></i></a></li>
 	<li<?php if ($page == 1): ?> class="disabled" <?php endif; ?>><a href="#" data-page="<?php echo max(1, $page-1); ?>" data-filter="<?php echo $filter; ?>" data-term="<?php echo $termt; ?>"><i class="icon-chevron-left"></i></a></li>
 	<?php
@@ -157,5 +257,6 @@ $rsd = mysql_query($sql);
 	?>
 	<li<?php if ($page == $pages): ?> class="disabled" <?php endif; ?>><a href="#" data-page="<?php echo min($pages, $page+1); ?>" data-filter="<?php echo $filter; ?>" data-term="<?php echo $termt; ?>"><i class="icon-chevron-right"></i></a></li>
 	<li<?php if ($page == $pages): ?> class="disabled" <?php endif; ?>><a href="#" data-page="<?php echo $pages; ?>" data-filter="<?php echo $filter; ?>" data-term="<?php echo $termt; ?>"><i class="icon-arrow-right"></i></a></li>
-</ul>
+</ul>-->
+<?php print pagination($sqlc, $termt, $filter, $per_page, $page); ?>
 </div>

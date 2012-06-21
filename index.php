@@ -7,11 +7,17 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title></title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<title>masqueparabrisas</title>
+	<meta name="description" content="Auto Vidro, empresa con amplia experiencia en el sector, le ofrece todo tipo de cristales para su vehículo, de primeras marcas y con certificado de homologación.">
+	<meta name="author" content="http://ryck.me/">
+	<meta name="keywords" content="auto vidro, autovidro, vigo, parabrisas, cristales, vehículo, coche, cristales, lunetas, laterales, molduras, grapas, sensores, pegamento, accesorios, coche sustitucion, pontevedra">
 
 	<meta name="viewport" content="width=device-width">
+	
+	<meta property="og:title" content="masqueparabrisas" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.masqueparabrisas.es/" />
+	<meta property="og:image" content="http://www.masqueparabrisas.es/masqueparabrisas-logo-128.png" />
 
 	<link rel="stylesheet" href="css/style.css">
 	
@@ -35,7 +41,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">auto vidro</a>
+          <a class="brand" href="index.php">masqueparabrisas</a>
           <div class="nav-collapse">
             <ul class="nav">
               <li class="active"><a href="index.php">Inicio</a></li>
@@ -49,12 +55,19 @@
     <div class="container">
 
 		<!-- Example row of columns -->
-		<div class="row">
+		<div class="row cabecera">
 		  <div class="span12" id="slogan">
-		  		<h1>auto vidro</h1>
+<!--		  		<h1>auto vidro</h1>-->
 		    	<h2><a href="tel://986 413 155">986 413 155</a></h2>
 		    	<h3>consultas y pedidos</h3>
 		 </div>
+		 
+		<ul class="social-buttons">
+			<li><a href="http://twitter.com/share" class="socialite twitter-share" data-text="masqueparabrisas.es" data-url="http://masqueparabrisas.es" data-count="vertical" rel="nofollow" target="_blank"><span class="vhidden">Share on Twitter</span></a></li>
+			<li><a href="https://plus.google.com/share?url=http://masqueparabrisas.es" class="socialite googleplus-one" data-size="tall" data-href="http://masqueparabrisas.es" rel="nofollow" target="_blank"><span class="vhidden">Share on Google+</span></a></li>
+			<li><a href="http://www.facebook.com/sharer.php?u=http://masqueparabrisas.es&amp;t=masqueparabrisas.es" class="socialite facebook-like" data-href="http://masqueparabrisas.es" data-send="false" data-layout="box_count" data-width="60" data-show-faces="false" rel="nofollow" target="_blank"><span class="vhidden">Share on Facebook</span></a></li>
+		</ul>
+
 		</div>
 
       <!-- Main hero unit for a primary marketing message or call to action -->

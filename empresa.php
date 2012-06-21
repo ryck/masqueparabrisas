@@ -7,10 +7,18 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title></title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<title>masqueparabrisas - empresa</title>
+	<meta name="description" content="Auto Vidro, empresa con amplia experiencia en el sector, le ofrece todo tipo de cristales para su vehículo, de primeras marcas y con certificado de homologación.">
+	<meta name="author" content="http://ryck.me/">
+	<meta name="keywords" content="auto vidro, autovidro, vigo, parabrisas, cristales, vehículo, coche, cristales, lunetas, laterales, molduras, grapas, sensores, pegamento, accesorios, coche sustitucion, pontevedra">
 
+	<meta name="viewport" content="width=device-width">
+	
+	<meta property="og:title" content="masqueparabrisas" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.masqueparabrisas.es/" />
+	<meta property="og:image" content="http://www.masqueparabrisas.es/masqueparabrisas-logo-128.png" />
+	
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="stylesheet" href="css/style.css">
@@ -33,11 +41,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">auto vidro</a>
+          <a class="brand" href="index.php">masqueparabrisas</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="index.php">Inicio</a></li>
-              <li><a href="empresa.php">Empresa</a></li>
+              <li><a href="index.php">Inicio</a></li>
+              <li class="active"><a href="empresa.php">Empresa</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
