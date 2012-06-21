@@ -239,5 +239,7 @@ $(document).ready(function() {
 	
 	
 	Socialite.load();
+	
+	//$('.lista-seguros').quovolver();
 
 });

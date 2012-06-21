@@ -149,9 +149,18 @@
 		 
 		 		<h3 class="subcabecera"><i class="icon-road icon-large"></i> Seguros</h3>
 		 		<p>Tenemos acuerdos con las príncipales compañías de seguros:</p>
-		 		<p class="dynamo-container">
-		 			<span class="dynamo" data-lines="Nacional Suiza, Allianz, Reale, Groupama, Ges, Catalana Occidente, Helvetia, Patria Hispania" data-center="true">Zurich</span>
-		 		</p>
+		 		<ul class="lista-seguros clearfix">
+			 		<li>Nacional suiza</li>
+			 		<li>Allianz</li>
+			 		<li>Reale</li>
+			 		<li>Groupama</li>
+			 		<li>Ges</li>
+			 		<li>Catalana Occidente</li>
+			 		<li>Helvetia</li>
+			 		<li>Patria Hispania</li>
+		 		</ul>
+		 		<p class="pull-right">Y muchas más. Consúltenos sin compromiso.</p>
+		 		
 		 </div>
 		 
 		 <div class="span5">
