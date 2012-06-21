@@ -6776,7 +6776,8 @@ ul.lista-servicios li:before {
   margin: 0;
 }
 .social-buttons li {
-  display: inline;
+  display: block;
+  margin-top: 1em;
 }
 @media (max-width: 767px) {
   #slogan h2 a {

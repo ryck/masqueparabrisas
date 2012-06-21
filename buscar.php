@@ -113,8 +113,8 @@ function checkValues($value)
     			$pagination.= "<li><a href='#' data-page='$next' data-filter='$filter' data-term='$termt'><i class='icon-chevron-right'></i></a></li>";
                 $pagination.= "<li><a href='#' data-page='$lastpage' data-filter='$filter' data-term='$termt'><i class='icon-arrow-right'></i></a></li>";
     		}else{
-    			$pagination.= "<li class='active'><a href='#' data-page='$counter' data-filter='$filter' data-term='$termt'><i class='icon-chevron-right'></i></a></li>";
-                $pagination.= "<li class='active'><a href='#' data-page='$counter' data-filter='$filter' data-term='$termt'><i class='icon-arrow-right'></i></a></li>";
+    			$pagination.= "<li class='active'><a href='#' data-page='$lastpage' data-filter='$filter' data-term='$termt'><i class='icon-chevron-right'></i></a></li>";
+                $pagination.= "<li class='active'><a href='#' data-page='$lastpage' data-filter='$filter' data-term='$termt'><i class='icon-arrow-right'></i></a></li>";
             }
     		$pagination.= "</ul>\n";		
     	}
