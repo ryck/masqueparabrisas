@@ -129,37 +129,37 @@
 		 </div>
 		 
 		 <div class="span4 seguros">
+		  
+	 		<h3 class="subcabecera"><i class="icon-road icon-large"></i> Seguros</h3>
+	 		<p>Tenemos acuerdos con las príncipales compañías de seguros:</p>
+	 		<ul class="lista-seguros clearfix">
+		 		<li>Nacional suiza</li>
+		 		<li>Allianz</li>
+		 		<li>Reale</li>
+		 		<li>Groupama</li>
+		 		<li>Ges</li>
+		 		<li>Catalana Occidente</li>
+		 		<li>Helvetia</li>
+		 		<li>Patria Hispania</li>
+	 		</ul>
+	 		<p class="muchas-mas">Y muchas más. Consúltenos sin compromiso.</p>
+		 	
 		 	<h3 class="subcabecera"><i class="icon-gift icon-large"></i> Ofertas</h3>
-		 
-		 <div class="flex-container">
-		   <div class="flexslider flexslider-ofertas">
-		     <ul class="slides">
-		       <li>
-		         <p>Auto Vidro, empresa con amplia experiencia en el sector, le ofrece todo tipo de cristales para su vehículo, de primeras marcas y con certificado de homologación. Visite nuestra nave o llámenos para que realicemos el trabajo a domicilio. Si necesita coche de sustitución al cambiar su parabrisas, recogemos el suyo y le dejamos el nuestro. Llame para reservar.</p>
-		       </li>
-		       <li>
-		         <p>Visite nuestra nave o llámenos para que realicemos el trabajo a domicilio. Si necesita coche de sustitución al cambiar su parabrisas, recogemos el suyo y le dejamos el nuestro. Llame para reservar.</p>
-		       </li>
-		       <li>
-		         <p>Si necesita coche de sustitución al cambiar su parabrisas, recogemos el suyo y le dejamos el nuestro. Llame para reservar.</p>
-		       </li>
-		     </ul>
-		   </div>
-		 </div>
-		 
-		 		<h3 class="subcabecera"><i class="icon-road icon-large"></i> Seguros</h3>
-		 		<p>Tenemos acuerdos con las príncipales compañías de seguros:</p>
-		 		<ul class="lista-seguros clearfix">
-			 		<li>Nacional suiza</li>
-			 		<li>Allianz</li>
-			 		<li>Reale</li>
-			 		<li>Groupama</li>
-			 		<li>Ges</li>
-			 		<li>Catalana Occidente</li>
-			 		<li>Helvetia</li>
-			 		<li>Patria Hispania</li>
-		 		</ul>
-		 		<p class="pull-right">Y muchas más. Consúltenos sin compromiso.</p>
+		 	<div class="flex-container">
+		 	  <div class="flexslider flexslider-ofertas">
+		 	    <ul class="slides">
+		 	      <li>
+		 	        <p>Auto Vidro, empresa con amplia experiencia en el sector, le ofrece todo tipo de cristales para su vehículo, de primeras marcas y con certificado de homologación. Visite nuestra nave o llámenos para que realicemos el trabajo a domicilio. Si necesita coche de sustitución al cambiar su parabrisas, recogemos el suyo y le dejamos el nuestro. Llame para reservar.</p>
+		 	      </li>
+		 	      <li>
+		 	        <p>Visite nuestra nave o llámenos para que realicemos el trabajo a domicilio. Si necesita coche de sustitución al cambiar su parabrisas, recogemos el suyo y le dejamos el nuestro. Llame para reservar.</p>
+		 	      </li>
+		 	      <li>
+		 	        <p>Si necesita coche de sustitución al cambiar su parabrisas, recogemos el suyo y le dejamos el nuestro. Llame para reservar.</p>
+		 	      </li>
+		 	    </ul>
+		 	  </div>
+		 	</div>
 		 		
 		 </div>
 		 
