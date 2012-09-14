@@ -5789,7 +5789,7 @@ body {
   width: 60%;
 }
 .controles {
-  margin-top: .5em;
+  margin-top: 1em;
 }
 #slogan h2 a {
   color: #ff0b1b;
@@ -5927,6 +5927,12 @@ ul.lista-servicios li:before {
 }
 .pagination a {
   line-height: 33px;
+}
+.no-results {
+  text-align: center;
+  font-size: 2em;
+  color: #ff0b1b;
+  padding: 1em 0;
 }
 @media (min-width: 768px) and (max-width: 979px) {
   #slogan h2 a {

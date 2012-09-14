@@ -192,25 +192,23 @@ $sql = $query .= " limit $start,$per_page";
 //echo $sql;
 
 $rsd = mysql_query($sql);
+
+
+if ($count == 0) {
+
+?>
+
+<div class="row well no-results">
+<i class='icon-warning-sign icon-large'></i> Ningun producto disponible.
+</div>
+
+<?php
+
+} else {
+
 ?>
 
 <div class="pagination pagination-centered">
-<!--	<ul id="pagination-list">
-		<li<?php if ($page == 1): ?> class="disabled" <?php endif; ?>><a href="#" data-page="1" data-filter="<?php echo $filter; ?>" data-term="<?php echo $termt; ?>"><i class="icon-arrow-left"></i></a></li>
-		<li<?php if ($page == 1): ?> class="disabled" <?php endif; ?>><a href="#" data-page="<?php echo max(1, $page-1); ?>" data-filter="<?php echo $filter; ?>" data-term="<?php echo $termt; ?>"><i class="icon-chevron-left"></i></a></li>
-		<?php
-		//Show page links
-		for($i=1; $i<=$pages; $i++)
-		{
-		?>
-			<li <?php if ($page == $i): ?> class="active" <?php endif; ?>><a href="#" data-page="<?php echo $i; ?>" data-filter="<?php echo $filter; ?>" data-term="<?php echo $termt; ?>"><?php echo $i; ?></a></li>
-		<?php
-		}
-		?>
-		<li<?php if ($page == $pages): ?> class="disabled" <?php endif; ?>><a href="#" data-page="<?php echo min($pages, $page+1); ?>" data-filter="<?php echo $filter; ?>" data-term="<?php echo $termt; ?>"><i class="icon-chevron-right"></i></a></li>
-		<li<?php if ($page == $pages): ?> class="disabled" <?php endif; ?>><a href="#" data-page="<?php echo $pages; ?>" data-filter="<?php echo $filter; ?>" data-term="<?php echo $termt; ?>"><i class="icon-arrow-right"></i></a></li>
-	</ul>-->
-	
 	<?php print pagination($sqlc, $termt, $filter, $per_page, $page); ?>
 </div>
 <span class="pull-right resultados"><?php echo $count; ?> resultados</span>
@@ -243,20 +241,11 @@ $rsd = mysql_query($sql);
 </table>
 
 <div class="pagination pagination-centered">
-<!--<ul id="pagination-list">
-	<li<?php if ($page == 1): ?> class="disabled" <?php endif; ?>><a href="#" data-page="1" data-filter="<?php echo $filter; ?>" data-term="<?php echo $termt; ?>"><i class="icon-arrow-left"></i></a></li>
-	<li<?php if ($page == 1): ?> class="disabled" <?php endif; ?>><a href="#" data-page="<?php echo max(1, $page-1); ?>" data-filter="<?php echo $filter; ?>" data-term="<?php echo $termt; ?>"><i class="icon-chevron-left"></i></a></li>
-	<?php
-	//Show page links
-	for($i=1; $i<=$pages; $i++)
-	{
-	?>
-		<li <?php if ($page == $i): ?> class="active" <?php endif; ?>><a href="#" data-page="<?php echo $i; ?>" data-filter="<?php echo $filter; ?>" data-term="<?php echo $termt; ?>"><?php echo $i; ?></a></li>
-	<?php
-	}
-	?>
-	<li<?php if ($page == $pages): ?> class="disabled" <?php endif; ?>><a href="#" data-page="<?php echo min($pages, $page+1); ?>" data-filter="<?php echo $filter; ?>" data-term="<?php echo $termt; ?>"><i class="icon-chevron-right"></i></a></li>
-	<li<?php if ($page == $pages): ?> class="disabled" <?php endif; ?>><a href="#" data-page="<?php echo $pages; ?>" data-filter="<?php echo $filter; ?>" data-term="<?php echo $termt; ?>"><i class="icon-arrow-right"></i></a></li>
-</ul>-->
-<?php print pagination($sqlc, $termt, $filter, $per_page, $page); ?>
+  <?php print pagination($sqlc, $termt, $filter, $per_page, $page); ?>
 </div>
+
+<?php
+
+}
+
+?>
