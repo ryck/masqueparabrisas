@@ -74,7 +74,7 @@
       <div id="hero-search">
 			<form class="form-horizontal" id="home-search-form">
               <div class="input-append">
-                <input type="text" size="16" id="term" name="term" placeholder="Busque por EUROCODE, nombre, medidas..." class=""><button type="button" id="buscar" class="btn btn-large">Buscar</button>
+                <input type="text" size="16" id="term" name="term" placeholder="EUROCODE, nombre, medidas, etc..." class=""><button type="button" id="buscar" class="btn btn-large">Buscar</button>
               </div>
               <div class="controles">
 	              <label class="radio inline">

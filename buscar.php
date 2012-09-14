@@ -213,7 +213,7 @@ $rsd = mysql_query($sql);
 	
 	<?php print pagination($sqlc, $termt, $filter, $per_page, $page); ?>
 </div>
-
+<span class="pull-right resultados"><?php echo $count; ?> resultados</span>
 <table class="table table-bordered table-striped" id="tabla-resultados">
   <thead>
     <tr>
