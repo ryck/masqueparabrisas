@@ -165,7 +165,22 @@ ul.lista-servicios li:before {
 	text-align: right;
 }
 
+.controles {
+	display: none;
+}
 
+.control-buttons {
+	margin-top: 0.5em;
+}
+.control-buttons .btn-group .btn {
+	float: none;
+	display: inline-block;
+	margin-right: -4px;
+}
+
+.control-buttons .btn-group .btn.active {
+	color: #fff;
+}
 
 @media (min-width: 768px) and (max-width: 979px) { 
 	#slogan h2 a {
@@ -188,6 +203,16 @@ ul.lista-servicios li:before {
 	}
 	#term {
 		font-size: 1.5em;
+	}
+	.control-buttons .btn-group .btn {
+		float: none;
+		display: block;
+		margin-right: 0;
+		margin-left: 0;
+		width: 100%;
+	}
+	.control-buttons .btn-group .btn:last-child, .control-buttons .btn-group .btn:first-child {
+		border-radius: 0;
 	}
 
 }

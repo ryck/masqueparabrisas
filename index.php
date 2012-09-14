@@ -96,6 +96,17 @@
 	                <input type="radio" value="5" id="radio5" name="filter"> Pegamento y accesorios
 	              </label>
             </div>
+            <div class="control-buttons">
+	            <div class="btn-group" data-toggle="buttons-radio">
+							  <button type="button" class="btn" data-filter="0">Todo</button>
+							  <button type="button" class="btn" data-filter="1">Parabrisas</button>
+							  <button type="button" class="btn" data-filter="2">Lunetas</button>
+							  <button type="button" class="btn" data-filter="3">Laterales</button>
+							  <button type="button" class="btn" data-filter="4">Molduras, grapas y sensores</button>
+							  <button type="button" class="btn" data-filter="5">Pegamento y accesorios</button>
+							</div>
+						</div>
+
           	</form>
       </div>
      </div> <!-- /container -->

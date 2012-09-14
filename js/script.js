@@ -242,4 +242,14 @@ $(document).ready(function() {
 	
 	//$('.lista-seguros').quovolver();
 
+	$(".control-buttons button").on("click", function(e){	
+		var rid = $(this).data('filter');
+		var value = '[value="'+rid+'"]';
+		$('input:radio[name="filter"]').filter(value).attr('checked', true);
+		$(this).siblings().removeClass("btn-danger");
+		$(this).addClass("btn-danger");
+		//console.log($(this).data('filter'));	
+	});
+
+
 });
