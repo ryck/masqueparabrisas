@@ -160,13 +160,13 @@
 		 	  <div class="flexslider flexslider-ofertas">
 		 	    <ul class="slides">
 		 	      <li>
-		 	        <p>Auto Vidro, empresa con amplia experiencia en el sector, le ofrece todo tipo de cristales para su vehículo, de primeras marcas y con certificado de homologación. Visite nuestra nave o llámenos para que realicemos el trabajo a domicilio. Si necesita coche de sustitución al cambiar su parabrisas, recogemos el suyo y le dejamos el nuestro. Llame para reservar.</p>
+		 	        <p>Si necesita un cristal para su autómovil, no dude en llamarnos al 986413155 y le ofreceremos un presupuesto sin compromiso y a su medida.</p>
 		 	      </li>
 		 	      <li>
-		 	        <p>Visite nuestra nave o llámenos para que realicemos el trabajo a domicilio. Si necesita coche de sustitución al cambiar su parabrisas, recogemos el suyo y le dejamos el nuestro. Llame para reservar.</p>
+		 	        <p>Si necesita coche de sustitución al cambiar su parabrisas, recogemos el suyo y le dejamos el nuestro. Llame para reservar</p>
 		 	      </li>
 		 	      <li>
-		 	        <p>Si necesita coche de sustitución al cambiar su parabrisas, recogemos el suyo y le dejamos el nuestro. Llame para reservar.</p>
+		 	        <p>Visite nuestra nave o llámenos para que realicemos el trabajo a domicilio, estamos a su total disposición.</p>
 		 	      </li>
 		 	    </ul>
 		 	  </div>
