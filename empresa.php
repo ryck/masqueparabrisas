@@ -71,9 +71,9 @@
 				      <li>
 				        <a href="img/nave/NAVE3.jpg" class="fancybox"><img src="img/nave/NAVE3.jpg" /></a>
 				      </li>
-				      <li>
+				      <!-- <li>
 				        <a href="img/nave/NAVE4.jpg" class="fancybox"><img src="img/nave/NAVE4.jpg" /></a>
-				      </li>
+				      </li> -->
 				      <li>
 				        <a href="img/nave/NAVE5.jpg" class="fancybox"><img src="img/nave/NAVE5.jpg" /></a>
 <!--				        <div class="flex-caption">
@@ -89,7 +89,7 @@
 		 <div class="span4">
 		 	<h3 class="subcabecera"><i class="icon-cog icon-large"></i> Servicios</h3>
 				<ul class="lista-servicios">
-					<li>Cristales de ventanas y cristales para turismos, furgonetas</li>
+					<li>Venta y colocación de parabrisas</li>
 					<li>Reparación de impactos</li>
 					<li>Oscurecido de lunas</li>
 					<li>Venta de recambios en general</li>
@@ -208,7 +208,7 @@
 </script>
 
 <script>
-	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+	var _gaq=[['_setAccount','UA-36488413-1'],['_trackPageview']];
 	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
 	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
 	s.parentNode.insertBefore(g,s)}(document,'script'));
